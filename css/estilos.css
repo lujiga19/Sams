@@ -1,0 +1,249 @@
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header header header"
+        "contenido contenido contenido"
+        "footer footer footer";
+}
+
+.contenedor .header {
+    background: #011b41;
+    color: #fff;
+    grid-area: header;
+}
+
+.contenedor .contenido {
+    grid-area: contenido;
+    display: flex;
+}
+
+.contenedor .footer {
+    display: flex;
+    background: #12203E;
+    color: #fff;
+    grid-area: footer;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0px;
+    width: 120px;
+}
+
+nav li {
+    display: inline-flex;
+}
+
+nav ul {
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li:hover {
+    background-color: rgb(52, 62, 122);
+}
+
+.footer {
+    text-align: center;
+
+}
+
+.telefono {
+    margin: 10px;
+}
+
+.redes {
+    margin: 10px;
+
+}
+
+.copyright {
+    margin: 10px;
+    width: 200px;
+}
+
+.footer p {
+    position: relative;
+    left: 200px;
+}
+
+.redes .icono {
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: -20px;
+    left: 200px;
+}
+h2{
+    font-size: 20px;
+    text-align: center;
+}
+.Despensa {
+    padding: 10px;
+	width: 455px;
+	border: 1px solid #000;
+    border-width: medium;
+    background-color: rgb(93, 124, 209);
+}
+
+.Despensa img{
+    padding: 10px;
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: 10px;
+    left: 180px;
+}
+
+.Despensa p{
+    font-size: 15px;
+    text-align: center;
+}
+.Electronica {
+    padding: 10px;
+	width: 455px;
+	border: 1px solid #000;
+    border-width: medium;
+    background-color: rgb(93, 124, 209);
+}
+.Electronica img{
+    padding: 10px;
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: 10px;
+    left: 180px;
+}
+
+.Electronica p{
+    font-size: 15px;
+    text-align: center;
+}
+.Juguetes {
+    padding: 10px;
+	width: 455px;
+	border: 1px solid #000;
+    border-width: medium;
+    background-color: rgb(93, 124, 209);
+}
+.Juguetes img{
+    padding: 10px;
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: 10px;
+    left: 180px;
+}
+
+.Juguetes p{
+    font-size: 15px;
+    text-align: center;
+}
+.LineaBlanca {
+    padding: 10px;
+	width: 455px;
+	border: 1px solid #000;
+    border-width: medium;
+    background-color: rgb(93, 124, 209);
+}
+.LineaBlanca img{
+    padding: 10px;
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: 10px;
+    left: 180px;
+}
+
+.LineaBlanca p{
+    font-size: 15px;
+    text-align: center;
+}
+.Deportes {
+    padding: 10px;
+	width: 455px;
+	border: 1px solid #000;
+    border-width: medium;
+    background-color: rgb(93, 124, 209);
+}
+.Deportes img{
+    padding: 10px;
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: 10px;
+    left: 180px;
+}
+
+.Deportes p{
+    font-size: 15px;
+    text-align: center;
+}
+.Mascotas {
+    padding: 10px;
+	width: 455px;
+	border: 1px solid #000;
+    border-width: medium;
+    background-color: rgb(93, 124, 209);
+}
+.Mascotas img{
+    padding: 10px;
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: 10px;
+    left: 180px;
+}
+
+.Mascotas p{
+    font-size: 15px;
+    text-align: center;
+}
+.Espacio{
+    padding: 10px;
+	width: 10px;
+	
+}
+
+/*Tamaño mediano*/
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+
+    .contenedor .contenido .columna1,
+    .contenedor .contenido .columna2 {
+        width: 47%;
+        background: #f3e0cd;
+    }
+
+    .contenedor .contenido .columna1 {
+        float: left;
+    }
+
+    .contenedor .contenido .columna2 {
+        float: right;
+        height: 200px;
+    }
+
+    .contenedor .contenido .columna3 {
+        width: 98.5%;
+        background: #f3e0cd;
+    }
+
+    .contenedor .contenido {
+        display: inline-block;
+    }
+}
+
+/*Tamaño pequeño*/
+@media screen and (max-width: 640px) {}
+
+/*Tamaño por default (Grande)*/
+@media screen and (min-width: 1280px) {}
